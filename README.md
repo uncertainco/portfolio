@@ -1,3 +1,3 @@
-# portfolio
+# Portfolio
 
-Personal portfolio's template for clients
+Personal Portfolio's Templates for Clients.
