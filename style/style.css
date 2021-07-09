@@ -1,29 +1,3 @@
-/*
-* Template Name: Leven - Resume / CV / vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.1.0
-*/
-
-/* =============================================================================
-
-1. General styles (Buttons, Inputs, Typography)
-2. Page loadig animation
-3. Page container
-4. Site header (Panel with logo & navigation)
-5. Site content
-6. Pages
-7. Sliders (testimonials & portfolio carousels)
-8. Portfolio Full info page
-9. Single Page Layout (Blog Post page ...)
-10. Pricing
-11. Blog
-12. 404 Page
-13. Media Queries
-14. Additional Home Page Styles
-
-============================================================================= */
-
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
 
@@ -36,7 +10,7 @@
 @import url('./fonts/linecons/style.css');
 
 /* ============================================================================= 
-1. General styles
+General styles
 ============================================================================= */
 
 html {
@@ -718,69 +692,9 @@ td {
 /* /White Spaces */
 
 
-/* ============================================================================= 
-2. Page loadig animation
-============================================================================= */
-.no-js .preloader,
-.no-js .preloader-portfolio { 
-  display: none;
-}
-.preloader,
-.preloader-portfolio {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: #222;
-}
-
-.preloader-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  background-color: inherit;
-  color: inherit;
-  opacity: 1;
-  transition: opacity 0.3s;
-  transform: translate3d(-50%,-50%,0);
-}
-
-.preloader-spinner {
-  width: 52px;
-  height: 52px;
-  margin: 100px auto;
-  background-color: #4A6583;
-
-  border-radius: 100%;  
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
-  100% {
-    -webkit-transform: scale(1.1);
-    opacity: 0;
-  }
-}
-
-@keyframes sk-scaleout {
-  0% { 
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  } 100% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 0;
-  }
-}
-
 
 /* ============================================================================= 
-3. Page container
+Page container
 ============================================================================= */
 .page-container {
   display: flex;
@@ -1158,7 +1072,7 @@ td {
 
 
 /* ============================================================================= 
-4. Site header (Panel with logo & navigation)
+Site header (Panel with logo & navigation)
 ============================================================================= */
 .header {
   display: block;
@@ -1339,7 +1253,7 @@ td {
 }
 
 /* ============================================================================= 
-5. Site content
+Site content
 ============================================================================= */
 .page-title {
   display: block;
@@ -4629,258 +4543,7 @@ a.post-thumbnail:hover {
 
 
 
-/* ======= Contributor Page ======= */
-.contributor {
-  border-bottom: 1px solid rgba(0,0,0,.1);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 48px 10px;
-}
 
-.contributor:first-of-type {
-  padding-top: 24px;
-}
-
-.contributor-info {
-  margin: 0 auto;
-}
-
-.contributor-avatar {
-  border: 1px solid rgba(0,0,0,.1);
-  float: left;
-  margin: 0 30px 20px 0;
-  padding: 2px;
-}
-
-.contributor-name {
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.contributor-bio a:hover {
-  text-decoration: none;
-}
-
-.contributor-posts-link {
-  display: inline-block;
-  line-height: normal;
-  padding: 10px 30px;
-}
-
-.contributor-posts-link:before {
-  content: "\f443";
-}
-
-
-
-/* ======= Blog Sidebar ======= */
-.blog-sidebar .sidebar-item {
-  margin-bottom: 10px;
-  font-size: .9em;
-  border: 2px solid #eee;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.blog-sidebar li {
-  font-size: 1em;
-}
-
-.sidebar-item .menu-item i {
-  display: none;
-}
-
-
-.sidebar .sidebar-item ul {
-  margin:0;
-  list-style: none;
-}
-
-.sidebar .sidebar-item ul li {
-  list-style: none;
-}
-
-.blog-sidebar select {
-  width: auto;
-  max-width: 100%;
-}
-
-.sidebar-item > select {
-  margin: 14px 20px 19px;
-}
-
-.blog-sidebar p {
-  font-size: 1em;
-}
-
-.blog-sidebar ul,
-.blog-sidebar .textwidget,
-.blog-sidebar .tagcloud {
-  display: inline-block;
-  max-width: 100%;
-  padding: 10px 20px 15px;
-  margin: 4px 0;
-  list-style: none;
-}
-
-.blog-sidebar ul ul {
-  padding: 5px;
-}
-
-.blog-sidebar ul li {
-  padding-left: 15px;
-  margin: 5px 0;
-  position: relative;
-  color: #aaa;
-}
-
-
-.blog-sidebar ul li:before {
-  content: '';
-  position: absolute;
-  left: 0px;
-  border: 2px solid #4A6583;
-  height: 7px;
-  width: 7px;
-  border-radius: 8px;
-  display: inline-block;
-  top: 7px;
-}
-
-.blog-sidebar ul li ul {
-  padding: 0;
-  margin: 0;
-}
-
-.blog-sidebar ul li ul li {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.blog-sidebar .sub-menu,
-.blog-sidebar .children {
-  width: 100%;
-}
-
-.blog-sidebar .sub-menu ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.blog-sidebar .sub-menu li {
-  padding: 0 0 0 7px;
-  margin: 0;
-}
-
-.blog-sidebar .sub-menu li:before {
-  display: none;
-}
-
-.blog-sidebar a {
-  color: #888;
-}
-
-.blog-sidebar a:hover {
-  color: inherit;
-}
-
-.blog-sidebar .searchform {
-  margin: 4px 0;
-}
-
-.blog-sidebar .sidebar-item:first-child .searchform {
-  margin-top: 0;
-}
-
-.blog-sidebar h6,
-.blog-sidebar .sidebar-title {
-  display: block;
-  position: relative;
-  padding: 5px 22px 0;
-  margin: 15px 0 0 0;
-  color: #fff;
-}
-
-.blog-sidebar .sidebar-title h4 {
-  display: inline-block;
-  font-size: 17px;
-  position: relative;
-  margin: 0;
-}
-
-.blog-sidebar .sidebar-title h4:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background-color: #4A6583;
-}
-
-.blog-sidebar .sidebar-title h4:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background-color: #f5f5f5;
-}
-
-.blog-sidebar .post-date {
-  font-size: 11px;
-}
-
-.blog-sidebar .separator {
-  display: none;
-}
-
-.blog-sidebar h6 .demo-icons,
-.blog-sidebar .sidebar-title .demo-icons,
-.blog-sidebar .sidebar-title .fa {
-  color: #fff;
-  margin-right: .6em;
-}
-
-.blog-sidebar .sidebar-title .rsswidget img {
-  vertical-align: baseline;
-}
-
-
-/* Calendar */
-.calendar_wrap {
-  padding: 12px 22px;
-}
-
-.calendar_wrap table {
-  width: 100%;
-  border: 0;
-}
-
-.calendar_wrap th {
-  background-color: #e5e5e5;
-  text-align: center;
-  font-size: 11px;
-  border: 0;
-}
-
-.calendar_wrap td {
-  background-color: #fcfcfc;
-  text-align: center;
-  border: 0;
-}
-
-.calendar_wrap td#today {
-  background-color: #4A6583;
-  color: #fff;
-  padding: 0 3px;
-}
 
 /* hiding the Duplicated widget title */
 .screen-reader-text {
@@ -4894,105 +4557,6 @@ a.post-thumbnail:hover {
 
 
 
-/* ======= Search form =======  */
-.search-form {
-  position: relative;
-  overflow: hidden;
-}
-
-.search-form label {
-  font-weight: inherit;
-  width: 100%;
-  margin: 0;
-}
-
-.search-form label span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 0;
-  text-indent: -3000px;
-  opacity: .35;
-  margin: 0;
-}
-
-.search-form label:after {
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "\f002";
-  font-size: 1.2em;
-  font-family: "Font Awesome 5 Free";
-  line-height: 48px; text-align: center;
-  border-left: none;
-  color: #ddd;
-}
-.search-form input[type="search"],
-.search-form input[type="text"] {
-  padding: 10px 50px 10px 16px;
-  margin-bottom: 0;
-  position: relative;
-  border: none;
-  width: 100%;
-  height: 48px;
-  color: inherit;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.blog-sidebar .search-form input[type="search"],
-.blog-sidebar .search-form input[type="text"] {
-  border: none;
-  background-color: transparent;
-}
-
-.search-form input[type="submit"],
-.search-form input[type="submit"]:hover,
-.search-form input[type="submit"]:focus {
-  position: absolute;
-  top: 0;
-  right:0;
-  height: 48px;
-  width: 48px;
-  background: transparent;
-  border: none;
-  z-index: 1000;
-  cursor: pointer;
-  text-indent: -200px;
-  overflow: hidden;
-  border-radius:0;
-  box-shadow: none;
-}
-
-.search-form input[type="text"]:focus + input[type="submit"] {
-  margin-right: 0;
-}
-
-
-/* ======= Search Results: nothing found ======= */
-.page-content-none {
-  padding-top: 30px;
-  text-align: center;
-}
-
-.page-content-none .search-form {
-  max-width: 270px;
-  margin: 30px auto;
-}
-
-.page-content-none .search-form input[type="search"] {
-  border: 1px solid #e5e5e5;
-}
-
-.page-content-none .search-form input[type="search"]:focus {
-  border-color: #aaa;
-}
 
 
 
@@ -5052,34 +4616,6 @@ a.post-thumbnail:hover {
 }
 
 
-
-
-/* ============================================================================= 
-12. 404 Page
-============================================================================= */
-.nothing-found {
-  text-align: center;
-}
-
-.nothing-found .page-content {
-  margin: 10% 0 15%;
-}
-
-.nothing-found h1 {
-  font-size: 160px;
-  line-height: 1.2em;
-  margin: 0;
-  color: #e5e5e5;
-  text-align: center;
-}
-
-.nothing-found p {
-  display: inline-block;
-  color: #fff;
-  background-color: #4A6583;
-  padding: 0 10px;
-  font-size: 16px;
-}
 
 
 
