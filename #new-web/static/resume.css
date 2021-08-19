@@ -365,6 +365,37 @@ main .main-one .box p {
     height: 4px;
     background: #4A6583;
 }
+#ten::after {
+    width: 10%;
+}
+#twenty::after {
+    width: 20%;
+}
+#thirty::after {
+    width: 30%;
+}
+#forty::after {
+    width: 40%;
+}
+#fifty::after {
+    width: 50%;
+}
+#sixty::after {
+    width: 60%;
+}
+#seventy::after {
+    width: 70%;
+}
+#eighty::after {
+    width: 80%;
+}
+#ninty::after {
+    width: 90%;
+}
+#full::after {
+    width: 100%;
+}
+
 .carousel-indicators button {
     border-radius: 0px !important;
 }
